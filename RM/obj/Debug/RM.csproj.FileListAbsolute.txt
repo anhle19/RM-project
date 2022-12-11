@@ -38,3 +38,4 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.CopyComplete
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.exe
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.pdb
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmMain.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmHome.resources

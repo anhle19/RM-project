@@ -36,5 +36,11 @@ namespace RM
         {
             lbUser.Text = MainClass.USER;
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            //open home form 
+            AddControls(new frmHome());
+        }
     }
 }
