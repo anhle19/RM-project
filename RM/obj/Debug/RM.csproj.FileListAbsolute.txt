@@ -39,3 +39,7 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.exe
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.pdb
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmMain.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmHome.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.SampleAdd.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.SampleView.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.frmCategoryView.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.frmCategoryAdd.resources
