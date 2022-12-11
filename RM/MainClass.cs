@@ -25,8 +25,18 @@ namespace RM
             if(dt.Rows.Count > 0)
             {
                 isValid = true;
+                USER = dt.Rows[0]["uname"].ToString();
             }
             return isValid;
         }
+        //create property for username
+        public static string user;
+        public static string USER
+        {
+            get { return user; }
+            private set { user = value; }
+        }
+        
+
     }
 }

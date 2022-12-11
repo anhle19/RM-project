@@ -24,3 +24,17 @@ D:\Desktop_Programming\RM-project\RM\RM\obj\Debug\RM.csproj.CoreCompileInputs.ca
 D:\Desktop_Programming\RM-project\RM\RM\obj\Debug\RM.csproj.CopyComplete
 D:\Desktop_Programming\RM-project\RM\RM\obj\Debug\RM.exe
 D:\Desktop_Programming\RM-project\RM\RM\obj\Debug\RM.pdb
+D:\Github\Restaurant-Management\RM\bin\Debug\RM.exe.config
+D:\Github\Restaurant-Management\RM\bin\Debug\RM.exe
+D:\Github\Restaurant-Management\RM\bin\Debug\RM.pdb
+D:\Github\Restaurant-Management\RM\bin\Debug\Guna.UI2.dll
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.AssemblyReference.cache
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.SuggestedBindingRedirects.cache
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmLogin.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Properties.Resources.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.GenerateResource.cache
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.CoreCompileInputs.cache
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.csproj.CopyComplete
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.exe
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.pdb
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.frmMain.resources
