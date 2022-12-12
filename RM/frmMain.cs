@@ -61,5 +61,10 @@ namespace RM
         {
             AddControls(new FrmTableView());
         }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmStaffView());
+        }
     }
 }

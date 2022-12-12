@@ -48,6 +48,7 @@
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Location = new System.Drawing.Point(426, 65);
             // 
             // btnAdd
             // 
@@ -61,6 +62,14 @@
             // 
             this.label2.Size = new System.Drawing.Size(121, 25);
             this.label2.Text = "Category List";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(423, 45);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Size = new System.Drawing.Size(750, 10);
             // 
             // guna2DataGridView1
             // 
@@ -99,7 +108,7 @@
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(891, 338);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(750, 338);
             this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -171,14 +180,16 @@
             this.dgvDel.ReadOnly = true;
             this.dgvDel.Width = 50;
             // 
-            // frmCategoryView
+            // FrmCategoryView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(948, 520);
+            this.ClientSize = new System.Drawing.Size(807, 520);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "frmCategoryView";
+            this.Name = "FrmCategoryView";
             this.Text = "CategoryView";
             this.Load += new System.EventHandler(this.frmCategoryView_Load);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.guna2Separator1, 0);
             this.Controls.SetChildIndex(this.txtSearch, 0);
             this.Controls.SetChildIndex(this.btnAdd, 0);
             this.Controls.SetChildIndex(this.label2, 0);
