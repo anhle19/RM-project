@@ -1,6 +1,6 @@
 ﻿namespace RM.Model
 {
-    partial class FrmCategoryAdd
+    partial class FrmTableAdd
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -37,13 +37,13 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Size = new System.Drawing.Size(325, 112);
+            this.guna2Panel1.Size = new System.Drawing.Size(318, 112);
             this.guna2Panel1.TabIndex = 3;
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 263);
-            this.guna2Panel2.Size = new System.Drawing.Size(325, 73);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 273);
+            this.guna2Panel2.Size = new System.Drawing.Size(318, 73);
             this.guna2Panel2.TabIndex = 2;
             // 
             // guna2PictureBox1
@@ -56,9 +56,9 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(127, 25);
+            this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Category";
+            this.label1.Text = "Table Details";
             // 
             // btnClose
             // 
@@ -68,8 +68,7 @@
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.Location = new System.Drawing.Point(157, 16);
-            this.btnClose.TabIndex = 0;
+            this.btnClose.Location = new System.Drawing.Point(158, 16);
             // 
             // btnSave
             // 
@@ -79,16 +78,7 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.Location = new System.Drawing.Point(31, 16);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 158);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.btnSave.Location = new System.Drawing.Point(32, 16);
             // 
             // txtName
             // 
@@ -102,7 +92,7 @@
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(42, 178);
+            this.txtName.Location = new System.Drawing.Point(43, 194);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '\0';
             this.txtName.PlaceholderText = "";
@@ -110,15 +100,24 @@
             this.txtName.Size = new System.Drawing.Size(235, 36);
             this.txtName.TabIndex = 0;
             // 
-            // FrmCategoryAdd
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Name";
+            // 
+            // FrmTableAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(325, 336);
+            this.ClientSize = new System.Drawing.Size(318, 346);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label2);
-            this.Name = "FrmCategoryAdd";
-            this.Text = "frmCategoryAdd";
+            this.Name = "FrmTableAdd";
+            this.Text = "FrmTableAdd";
             this.Controls.SetChildIndex(this.guna2Panel1, 0);
             this.Controls.SetChildIndex(this.guna2Panel2, 0);
             this.Controls.SetChildIndex(this.label2, 0);
@@ -134,7 +133,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
+        private System.Windows.Forms.Label label2;
     }
 }

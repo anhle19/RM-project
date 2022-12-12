@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -105,6 +106,24 @@ namespace RM
             }
         }
 
+        public static void BlurBackground(Form Model)
+        {
+            Form Background = new Form();
+            using (Model)
+            {
+                Background.StartPosition = FormStartPosition.Manual;
+                Background.FormBorderStyle = FormBorderStyle.None;
+                Background.Opacity = 0.5d;
+                Background.BackColor = Color.Black;
+                Background.Size = FrmMain.Instance.Size;
+                Background.Location = FrmMain.Instance.Location;
+                Background.ShowInTaskbar = false;
+                Background.Show();
+                Model.Owner = Background;
+                Model.ShowDialog(Background);
+                Background.Dispose();
+            }
+        }
 
     }
 }

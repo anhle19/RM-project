@@ -43,3 +43,5 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.SampleAdd.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.SampleView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.frmCategoryView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.frmCategoryAdd.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmTableView.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmTableAdd.resources

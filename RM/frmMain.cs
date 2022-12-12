@@ -19,6 +19,13 @@ namespace RM
         {
             InitializeComponent();
         }
+
+        static FrmMain _obj;
+        //for accessing FrmMain
+        public static FrmMain Instance
+        {
+            get { if (_obj == null) { _obj = new FrmMain(); }return _obj; }
+        }
         //method to add Controls in main form
         public void AddControls(Form f)
         {
@@ -36,6 +43,7 @@ namespace RM
         private void frmMain_Load(object sender, EventArgs e)
         {
             lbUser.Text = MainClass.USER;
+            _obj = this;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -47,6 +55,11 @@ namespace RM
         private void btnCategories_Click(object sender, EventArgs e)
         {
             AddControls(new FrmCategoryView());
+        }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            AddControls(new FrmTableView());
         }
     }
 }

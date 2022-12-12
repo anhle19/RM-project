@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace RM.Model
 {
-    public partial class FrmCategoryAdd : SampleAdd
+    public partial class FrmTableAdd : SampleAdd
     {
-        public FrmCategoryAdd()
+        public FrmTableAdd()
         {
             InitializeComponent();
         }
@@ -24,11 +24,11 @@ namespace RM.Model
 
             if (id == 0)
             {
-                qry = "Insert into category Values(@Name)";
+                qry = "Insert into tables Values(@Name)";
             }
             else
             {
-                qry = "Update category Set catname = @Name where catiD = @id";
+                qry = "Update tables Set tname = @Name where tiD = @id";
             }
 
             Hashtable ht = new Hashtable();

@@ -188,6 +188,7 @@
             this.btnTable.Text = "Tables";
             this.btnTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // btnProduct
             // 
@@ -356,7 +357,7 @@
             this.CenterPanel.Size = new System.Drawing.Size(1087, 712);
             this.CenterPanel.TabIndex = 1;
             // 
-            // frmMain
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -367,7 +368,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmMain";
+            this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
