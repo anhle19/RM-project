@@ -1,6 +1,6 @@
 ﻿namespace RM.Model
 {
-    partial class frmCategoryAdd
+    partial class FrmCategoryAdd
     {
         /// <summary>
         /// Required designer variable.

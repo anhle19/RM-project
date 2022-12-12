@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RM
 {
-    public partial class frmLogin : Form
+    public partial class FrmLogin : Form
     {
-        public frmLogin()
+        public FrmLogin()
         {
             InitializeComponent();
         }
@@ -33,7 +33,7 @@ namespace RM
             else
             {
                 this.Hide();
-                frmMain frmMain = new frmMain();
+                FrmMain frmMain = new FrmMain();
                 frmMain.Show();
             }
         }

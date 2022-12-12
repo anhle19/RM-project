@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -15,7 +16,7 @@ namespace RM
         public static readonly string con_string = "Data Source=LAPTOP-7F516QL8\\SQLEXPRESS;Initial Catalog=RM;Integrated Security=True";
         public static SqlConnection con = new SqlConnection(con_string);
 
-        //Method check user validation
+        //Method check user validation from database to login into application
         public static bool IsValidUser(string user, string pass)
         {
             bool isValid = false;
@@ -68,6 +69,8 @@ namespace RM
         //For loading data from database
         public static void LoadData(string qry, DataGridView gv, ListBox lb)
         {
+            // Serial not in gridview
+            gv.CellFormatting += new DataGridViewCellFormattingEventHandler(gv_Cellformatting);
             try
             {
                 SqlCommand cmd = new SqlCommand(qry, con);
@@ -90,6 +93,18 @@ namespace RM
                 con.Close();
             }
         }
-        
+
+        private static void gv_Cellformatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            Guna.UI2.WinForms.Guna2DataGridView gv = (Guna2DataGridView)sender;
+            int count = 0;
+            foreach (DataGridViewRow row in gv.Rows)
+            {
+                count++;
+                row.Cells[0].Value = count;
+            }
+        }
+
+
     }
 }

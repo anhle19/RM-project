@@ -1,6 +1,6 @@
 ﻿namespace RM
 {
-    partial class frmHome
+    partial class FrmHome
     {
         /// <summary>
         /// Required designer variable.

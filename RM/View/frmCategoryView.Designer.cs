@@ -1,6 +1,6 @@
 ﻿namespace RM.View
 {
-    partial class frmCategoryView
+    partial class FrmCategoryView
     {
         /// <summary>
         /// Required designer variable.
@@ -139,6 +139,7 @@
             this.dgvid.HeaderText = "id";
             this.dgvid.Name = "dgvid";
             this.dgvid.ReadOnly = true;
+            this.dgvid.Visible = false;
             // 
             // dgvName
             // 

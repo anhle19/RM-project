@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace RM
 {
-    public partial class frmMain : Form
+    public partial class FrmMain : Form
     {
-        public frmMain()
+        public FrmMain()
         {
             InitializeComponent();
         }
@@ -41,12 +41,12 @@ namespace RM
         private void btnHome_Click(object sender, EventArgs e)
         {
             //open home form 
-            AddControls(new frmHome());
+            AddControls(new FrmHome());
         }
 
         private void btnCategories_Click(object sender, EventArgs e)
         {
-            AddControls(new frmCategoryView());
+            AddControls(new FrmCategoryView());
         }
     }
 }

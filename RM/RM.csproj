@@ -64,30 +64,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmHome.cs">
+    <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHome.Designer.cs">
-      <DependentUpon>frmHome.cs</DependentUpon>
+    <Compile Include="FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="MainClass.cs" />
-    <Compile Include="frmLogin.cs">
+    <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\frmCategoryAdd.cs">
+    <Compile Include="Model\FrmCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\frmCategoryAdd.Designer.cs">
-      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    <Compile Include="Model\FrmCategoryAdd.Designer.cs">
+      <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,23 +113,23 @@
     <Compile Include="SampleView.Designer.cs">
       <DependentUpon>SampleView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmCategoryView.cs">
+    <Compile Include="View\FrmCategoryView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\frmCategoryView.Designer.cs">
-      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    <Compile Include="View\FrmCategoryView.Designer.cs">
+      <DependentUpon>FrmCategoryView.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmHome.resx">
-      <DependentUpon>frmHome.cs</DependentUpon>
+    <EmbeddedResource Include="FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\frmCategoryAdd.resx">
-      <DependentUpon>frmCategoryAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Model\FrmCategoryAdd.resx">
+      <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,8 +142,8 @@
     <EmbeddedResource Include="SampleView.resx">
       <DependentUpon>SampleView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmCategoryView.resx">
-      <DependentUpon>frmCategoryView.cs</DependentUpon>
+    <EmbeddedResource Include="View\FrmCategoryView.resx">
+      <DependentUpon>FrmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

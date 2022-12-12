@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace RM.Model
 {
-    public partial class frmCategoryAdd : SampleAdd
+    public partial class FrmCategoryAdd : SampleAdd
     {
-        public frmCategoryAdd()
+        public FrmCategoryAdd()
         {
             InitializeComponent();
         }
