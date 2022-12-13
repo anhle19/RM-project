@@ -47,3 +47,5 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmTableView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmTableAdd.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmStaffView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmStaffAdd.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmProductAdd.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmProductView.resources

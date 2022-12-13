@@ -89,6 +89,12 @@
     <Compile Include="Model\FrmCategoryAdd.Designer.cs">
       <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\FrmProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmProductAdd.Designer.cs">
+      <DependentUpon>FrmProductAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\FrmStaffAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     <Compile Include="View\FrmCategoryView.Designer.cs">
       <DependentUpon>FrmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmProductView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmProductView.Designer.cs">
+      <DependentUpon>FrmProductView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmStaffView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +167,9 @@
     <EmbeddedResource Include="Model\FrmCategoryAdd.resx">
       <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmProductAdd.resx">
+      <DependentUpon>FrmProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmStaffAdd.resx">
       <DependentUpon>FrmStaffAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,12 +190,16 @@
     <EmbeddedResource Include="View\FrmCategoryView.resx">
       <DependentUpon>FrmCategoryView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProductView.resx">
+      <DependentUpon>FrmProductView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FrmStaffView.resx">
       <DependentUpon>FrmStaffView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmTableView.resx">
       <DependentUpon>FrmTableView.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -191,6 +210,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\home_512px1.png" />
+    <None Include="Resources\icon-restaurant.png" />
+    <None Include="Resources\icons8-login-64.png" />
+    <None Include="Resources\productPic.bmp" />
+    <None Include="Resources\ProductPic.png" />
     <None Include="RMDataSet.xsc">
       <DependentUpon>RMDataSet.xsd</DependentUpon>
     </None>
@@ -204,16 +228,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-login-64.png" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon-restaurant.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -228,8 +243,26 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\home_512px1.png" />
+    <Content Include="Resources\cake-icon.jpg" />
+    <Content Include="Resources\candle-icon.jpg" />
+    <Content Include="Resources\categories-icon.jpg" />
+    <Content Include="Resources\coffee-icon.jpg" />
+    <Content Include="Resources\contact-icon.jpg" />
+    <Content Include="Resources\dishes-icon.jpg" />
+    <Content Include="Resources\fruit-juice-icon.jpg" />
+    <None Include="Resources\garbage-icon.png" />
+    <Content Include="Resources\home_512px.png" />
+    <Content Include="Resources\kitchen-icon.jpg" />
+    <Content Include="Resources\light-icon.jpg" />
+    <Content Include="Resources\membership-icon.jpg" />
+    <Content Include="Resources\order-icon.jpg" />
+    <None Include="Resources\plus-icon.png" />
+    <None Include="Resources\picBlue.png" />
+    <Content Include="Resources\ruou-icon.jpg" />
+    <Content Include="Resources\staff-icon.jpg" />
+    <Content Include="Resources\table-icon.jpg" />
+    <Content Include="Resources\taste-icon.jpg" />
+    <Content Include="Resources\vecteezy_restaurant-and-restaurant-service-icons-with-black-background_7772633 %289%29.jpg" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

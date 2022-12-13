@@ -63,6 +63,16 @@ namespace RM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garbage_icon {
+            get {
+                object obj = ResourceManager.GetObject("garbage-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap home_512px {
             get {
                 object obj = ResourceManager.GetObject("home_512px", resourceCulture);
@@ -96,6 +106,36 @@ namespace RM.Properties {
         internal static System.Drawing.Bitmap icon_restaurant {
             get {
                 object obj = ResourceManager.GetObject("icon-restaurant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picBlue {
+            get {
+                object obj = ResourceManager.GetObject("picBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_icon {
+            get {
+                object obj = ResourceManager.GetObject("plus-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ProductPic {
+            get {
+                object obj = ResourceManager.GetObject("ProductPic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
