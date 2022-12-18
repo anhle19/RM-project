@@ -63,6 +63,16 @@ namespace RM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancel_512px {
+            get {
+                object obj = ResourceManager.GetObject("Cancel_512px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap garbage_icon {
             get {
                 object obj = ResourceManager.GetObject("garbage-icon", resourceCulture);
@@ -126,6 +136,16 @@ namespace RM.Properties {
         internal static System.Drawing.Bitmap plus_icon {
             get {
                 object obj = ResourceManager.GetObject("plus-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngegg__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pngegg (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

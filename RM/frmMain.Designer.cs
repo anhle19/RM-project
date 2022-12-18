@@ -140,6 +140,7 @@
             this.btnPOS.Text = "POS";
             this.btnPOS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPOS.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnPOS.Click += new System.EventHandler(this.btnPOS_Click);
             // 
             // btnStaff
             // 
@@ -315,7 +316,7 @@
             this.lbUser.ForeColor = System.Drawing.Color.Black;
             this.lbUser.Location = new System.Drawing.Point(15, 24);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(0, 17);
+            this.lbUser.Size = new System.Drawing.Size(0, 23);
             this.lbUser.TabIndex = 3;
             // 
             // btnExit
@@ -361,7 +362,7 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1294, 763);
             this.Controls.Add(this.CenterPanel);

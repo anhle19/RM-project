@@ -76,6 +76,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPOS.Designer.cs">
+      <DependentUpon>FrmPOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainClass.cs" />
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="Model\FrmTableAdd.Designer.cs">
       <DependentUpon>FrmTableAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -164,6 +176,9 @@
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPOS.resx">
+      <DependentUpon>FrmPOS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmCategoryAdd.resx">
       <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmTableAdd.resx">
       <DependentUpon>FrmTableAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -244,6 +262,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cake-icon.jpg" />
+    <None Include="Resources\Cancel_512px.png" />
     <Content Include="Resources\candle-icon.jpg" />
     <Content Include="Resources\categories-icon.jpg" />
     <Content Include="Resources\coffee-icon.jpg" />
@@ -258,6 +277,7 @@
     <Content Include="Resources\order-icon.jpg" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\picBlue.png" />
+    <None Include="Resources\pngegg %281%29.png" />
     <Content Include="Resources\ruou-icon.jpg" />
     <Content Include="Resources\staff-icon.jpg" />
     <Content Include="Resources\table-icon.jpg" />
