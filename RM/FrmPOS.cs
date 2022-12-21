@@ -242,7 +242,7 @@ namespace RM
 
 
             SqlCommand cmd = new SqlCommand(qry1,MainClass.con);
-            cmd.Parameters.AddWithValue("@ID", MainID);
+            cmd.Parameters.AddWithValue("@MainID", MainID);
             cmd.Parameters.AddWithValue("@aDate", Convert.ToDateTime(DateTime.Now.Date));
             cmd.Parameters.AddWithValue("@aTime", DateTime.Now.ToShortTimeString());
             cmd.Parameters.AddWithValue("@TableName", lblTable.Text);
@@ -272,7 +272,7 @@ namespace RM
                 }
 
                 SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
-                cmd2.Parameters.AddWithValue("@ID", detailID);
+                cmd2.Parameters.AddWithValue("@DetailID", detailID);
                 cmd2.Parameters.AddWithValue("@MainID", MainID);
                 cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
                 cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
@@ -282,17 +282,16 @@ namespace RM
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
                 cmd2.ExecuteNonQuery();
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
-
-                guna2MessageDialog1.Show("Saved Successfully");
-                MainID = 0;
-                detailID = 0;
-                DataGridViewPOS.Rows.Clear();
-                lblTable.Text = "";
-                lblWaiter.Text = "";
-                lblTable.Visible = false;
-                lblWaiter.Visible = false;
-                lblTotal.Text = "0.00";
             }
+            POSMessageBox.Show("Saved Successfully");
+            MainID = 0;
+            detailID = 0;
+            DataGridViewPOS.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "0.00";
 
         }
     }
