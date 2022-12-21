@@ -113,6 +113,18 @@
     <Compile Include="Model\FrmTableAdd.Designer.cs">
       <DependentUpon>FrmTableAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\FrmTableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmTableSelect.Designer.cs">
+      <DependentUpon>FrmTableSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FrmWaiterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmWaiterSelect.Designer.cs">
+      <DependentUpon>FrmWaiterSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +203,12 @@
     <EmbeddedResource Include="Model\FrmTableAdd.resx">
       <DependentUpon>FrmTableAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmTableSelect.resx">
+      <DependentUpon>FrmTableSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmWaiterSelect.resx">
+      <DependentUpon>FrmWaiterSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,7 +249,6 @@
     <None Include="Resources\home_512px1.png" />
     <None Include="Resources\icon-restaurant.png" />
     <None Include="Resources\icons8-login-64.png" />
-    <None Include="Resources\productPic.bmp" />
     <None Include="Resources\ProductPic.png" />
     <None Include="RMDataSet.xsc">
       <DependentUpon>RMDataSet.xsd</DependentUpon>
@@ -261,28 +278,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\cake-icon.jpg" />
     <None Include="Resources\Cancel_512px.png" />
-    <Content Include="Resources\candle-icon.jpg" />
-    <Content Include="Resources\categories-icon.jpg" />
-    <Content Include="Resources\coffee-icon.jpg" />
-    <Content Include="Resources\contact-icon.jpg" />
-    <Content Include="Resources\dishes-icon.jpg" />
-    <Content Include="Resources\fruit-juice-icon.jpg" />
     <None Include="Resources\garbage-icon.png" />
     <Content Include="Resources\home_512px.png" />
-    <Content Include="Resources\kitchen-icon.jpg" />
-    <Content Include="Resources\light-icon.jpg" />
-    <Content Include="Resources\membership-icon.jpg" />
-    <Content Include="Resources\order-icon.jpg" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\picBlue.png" />
     <None Include="Resources\pngegg %281%29.png" />
-    <Content Include="Resources\ruou-icon.jpg" />
-    <Content Include="Resources\staff-icon.jpg" />
-    <Content Include="Resources\table-icon.jpg" />
-    <Content Include="Resources\taste-icon.jpg" />
-    <Content Include="Resources\vecteezy_restaurant-and-restaurant-service-icons-with-black-background_7772633 %289%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

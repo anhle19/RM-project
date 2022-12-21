@@ -51,3 +51,5 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmProductAdd.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmProductView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.FrmPOS.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.ucProduct.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmTableSelect.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmWaiterSelect.resources
