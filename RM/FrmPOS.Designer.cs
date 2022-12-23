@@ -32,14 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnExit = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblWaiter = new System.Windows.Forms.Label();
             this.lblTable = new System.Windows.Forms.Label();
             this.btnDin = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
             this.lblHeader = new System.Windows.Forms.Label();
             this.btnTakeAway = new Guna.UI2.WinForms.Guna2TileButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnHold = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnDelivery = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnKOT = new Guna.UI2.WinForms.Guna2TileButton();
@@ -50,20 +48,23 @@
             this.CategoryPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ProductPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.DataGridViewPOS = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.POSMessageBox = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.btnCheckOut = new Guna.UI2.WinForms.Guna2Button();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.POSMessageBox = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.btnExit = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.picturePOS = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewPOS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePOS)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -75,7 +76,7 @@
             this.guna2Panel1.Controls.Add(this.btnNew);
             this.guna2Panel1.Controls.Add(this.lblHeader);
             this.guna2Panel1.Controls.Add(this.btnTakeAway);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Controls.Add(this.picturePOS);
             this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnDelivery);
             this.guna2Panel1.Controls.Add(this.btnKOT);
@@ -87,21 +88,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1301, 106);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.Image = global::RM.Properties.Resources.Cancel_512px;
-            this.btnExit.ImageRotate = 0F;
-            this.btnExit.Location = new System.Drawing.Point(1201, 12);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(77, 85);
-            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnExit.TabIndex = 11;
-            this.btnExit.TabStop = false;
-            this.btnExit.UseTransparentBackground = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // lblWaiter
             // 
             this.lblWaiter.AutoSize = true;
@@ -110,7 +96,7 @@
             this.lblWaiter.ForeColor = System.Drawing.Color.White;
             this.lblWaiter.Location = new System.Drawing.Point(948, 60);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(76, 30);
+            this.lblWaiter.Size = new System.Drawing.Size(94, 37);
             this.lblWaiter.TabIndex = 10;
             this.lblWaiter.Text = "Waiter";
             // 
@@ -122,7 +108,7 @@
             this.lblTable.ForeColor = System.Drawing.Color.White;
             this.lblTable.Location = new System.Drawing.Point(948, 21);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(64, 30);
+            this.lblTable.Size = new System.Drawing.Size(79, 37);
             this.lblTable.TabIndex = 9;
             this.lblTable.Text = "Table";
             // 
@@ -178,7 +164,7 @@
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(120, 34);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(54, 30);
+            this.lblHeader.Size = new System.Drawing.Size(66, 37);
             this.lblHeader.TabIndex = 1;
             this.lblHeader.Text = "POS";
             // 
@@ -203,19 +189,6 @@
             this.btnTakeAway.TabIndex = 7;
             this.btnTakeAway.Text = "Take Away";
             this.btnTakeAway.Click += new System.EventHandler(this.btnTakeAway_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::RM.Properties.Resources.icon_restaurant;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(21, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(93, 78);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // btnHold
             // 
@@ -302,16 +275,18 @@
             this.btnBillList.Size = new System.Drawing.Size(90, 78);
             this.btnBillList.TabIndex = 4;
             this.btnBillList.Text = "Bill list";
+            this.btnBillList.Click += new System.EventHandler(this.btnBillList_Click);
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.btnCheckOut);
             this.guna2Panel2.Controls.Add(this.lblTotal);
             this.guna2Panel2.Controls.Add(this.label4);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 695);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 678);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1301, 76);
+            this.guna2Panel2.Size = new System.Drawing.Size(1301, 93);
             this.guna2Panel2.TabIndex = 1;
             // 
             // lblTotal
@@ -321,9 +296,9 @@
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
-            this.lblTotal.Location = new System.Drawing.Point(1126, 21);
+            this.lblTotal.Location = new System.Drawing.Point(1113, 28);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(54, 30);
+            this.lblTotal.Size = new System.Drawing.Size(68, 37);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "0.00";
             // 
@@ -334,9 +309,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1056, 21);
+            this.label4.Location = new System.Drawing.Point(1027, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 30);
+            this.label4.Size = new System.Drawing.Size(80, 37);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total:";
             // 
@@ -346,7 +321,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.CategoryPanel.Location = new System.Drawing.Point(30, 174);
             this.CategoryPanel.Name = "CategoryPanel";
-            this.CategoryPanel.Size = new System.Drawing.Size(209, 515);
+            this.CategoryPanel.Size = new System.Drawing.Size(209, 498);
             this.CategoryPanel.TabIndex = 2;
             // 
             // ProductPanel
@@ -356,7 +331,7 @@
             this.ProductPanel.AutoScroll = true;
             this.ProductPanel.Location = new System.Drawing.Point(254, 174);
             this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(670, 515);
+            this.ProductPanel.Size = new System.Drawing.Size(670, 498);
             this.ProductPanel.TabIndex = 3;
             // 
             // DataGridViewPOS
@@ -365,8 +340,7 @@
             this.DataGridViewPOS.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DataGridViewPOS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewPOS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewPOS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -380,8 +354,8 @@
             this.DataGridViewPOS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSno,
             this.dgvid,
-            this.dgvProID,
             this.dgvName,
+            this.dgvProID,
             this.dgvQty,
             this.dgvPrice,
             this.dgvAmount});
@@ -424,6 +398,36 @@
             this.DataGridViewPOS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.DataGridViewPOS.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DataGridViewPOS_CellFormatting);
             // 
+            // POSMessageBox
+            // 
+            this.POSMessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.POSMessageBox.Caption = "RMS";
+            this.POSMessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
+            this.POSMessageBox.Parent = null;
+            this.POSMessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.POSMessageBox.Text = null;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCheckOut.AutoRoundedCorners = true;
+            this.btnCheckOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnCheckOut.BorderRadius = 21;
+            this.btnCheckOut.CustomizableEdges.TopRight = false;
+            this.btnCheckOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.Location = new System.Drawing.Point(855, 28);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(120, 45);
+            this.btnCheckOut.TabIndex = 4;
+            this.btnCheckOut.Text = "Check out";
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            // 
             // dgvSno
             // 
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -442,19 +446,20 @@
             this.dgvid.ReadOnly = true;
             this.dgvid.Visible = false;
             // 
-            // dgvProID
-            // 
-            this.dgvProID.HeaderText = "ProductID";
-            this.dgvProID.Name = "dgvProID";
-            this.dgvProID.ReadOnly = true;
-            this.dgvProID.Visible = false;
-            // 
             // dgvName
             // 
             this.dgvName.HeaderText = "Name";
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
+            // 
+            // dgvProID
+            // 
+            this.dgvProID.HeaderText = "ProductID";
+            this.dgvProID.MinimumWidth = 6;
+            this.dgvProID.Name = "dgvProID";
+            this.dgvProID.ReadOnly = true;
+            this.dgvProID.Visible = false;
             // 
             // dgvQty
             // 
@@ -507,14 +512,33 @@
             this.txtSearch.TabIndex = 8;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // POSMessageBox
+            // btnExit
             // 
-            this.POSMessageBox.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.POSMessageBox.Caption = "RMS";
-            this.POSMessageBox.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
-            this.POSMessageBox.Parent = null;
-            this.POSMessageBox.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
-            this.POSMessageBox.Text = null;
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.Image = global::RM.Properties.Resources.Cancel_512px;
+            this.btnExit.ImageRotate = 0F;
+            this.btnExit.Location = new System.Drawing.Point(1201, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(77, 85);
+            this.btnExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnExit.TabIndex = 11;
+            this.btnExit.TabStop = false;
+            this.btnExit.UseTransparentBackground = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // picturePOS
+            // 
+            this.picturePOS.BackColor = System.Drawing.Color.Transparent;
+            this.picturePOS.Image = global::RM.Properties.Resources.icon_restaurant;
+            this.picturePOS.ImageRotate = 0F;
+            this.picturePOS.Location = new System.Drawing.Point(21, 12);
+            this.picturePOS.Name = "picturePOS";
+            this.picturePOS.Size = new System.Drawing.Size(93, 78);
+            this.picturePOS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePOS.TabIndex = 0;
+            this.picturePOS.TabStop = false;
+            this.picturePOS.UseTransparentBackground = true;
             // 
             // FrmPOS
             // 
@@ -536,11 +560,11 @@
             this.Load += new System.EventHandler(this.FrmPOS_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewPOS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePOS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -551,7 +575,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2TileButton btnNew;
         private System.Windows.Forms.Label lblHeader;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox picturePOS;
         private Guna.UI2.WinForms.Guna2TileButton btnDin;
         private Guna.UI2.WinForms.Guna2TileButton btnTakeAway;
         private Guna.UI2.WinForms.Guna2TileButton btnHold;
@@ -567,13 +591,14 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2MessageDialog POSMessageBox;
+        public Guna.UI2.WinForms.Guna2Button btnCheckOut;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
-        private Guna.UI2.WinForms.Guna2MessageDialog POSMessageBox;
     }
 }

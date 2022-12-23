@@ -8,9 +8,11 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace RM
 {
@@ -28,6 +30,7 @@ namespace RM
             this.Close();
         }
 
+        //Load categories and product to Panel
         private void FrmPOS_Load(object sender, EventArgs e)
         {
             DataGridViewPOS.BorderStyle = BorderStyle.FixedSingle;
@@ -37,7 +40,7 @@ namespace RM
             LoadProduct();
         }
 
-        // add categorys buttons to panel
+        // add categories buttons to panel
         private void AddCategory()
         {
             string qry = "Select * from Category";
@@ -65,6 +68,7 @@ namespace RM
             }
         }
 
+        //show product by click category buttons
         private void b_Click(object sender, EventArgs e)
         {
             Guna.UI2.WinForms.Guna2Button b = (Guna.UI2.WinForms.Guna2Button)sender;
@@ -293,6 +297,91 @@ namespace RM
             lblWaiter.Visible = false;
             lblTotal.Text = "0.00";
 
+        }
+
+        public int id = 0;
+        private void btnBillList_Click(object sender, EventArgs e)
+        {
+            FrmBillList frm = new FrmBillList();
+            MainClass.BlurBackground(frm);
+
+            if (frm.MainID > 0)
+            {
+                id = frm.MainID;
+                LoadEntries();
+            }
+        }
+
+        //Load data from bill list to FrmPos 
+        private void LoadEntries()
+        {
+            string qry = @"Select * from tblMain m
+                                inner join tblDetails d on m.MainID = d.MainID
+                                inner join products p on p.pID = d.proID
+                                where d.MainID = " + id + "";
+
+            SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            if (dt.Rows[0]["orderType"].ToString() == "Delivery")
+            {
+                btnTakeAway.Checked = false;
+                btnDin.Checked = false;
+                btnDelivery.Checked = true;
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+            }
+            if (dt.Rows[0]["orderType"].ToString() == "Take Away") 
+            {
+                btnDin.Checked = false;
+                btnDelivery.Checked = false;
+                btnTakeAway.Checked = true;
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+            }
+            else
+            {
+                btnTakeAway.Checked = false;
+                btnDelivery.Checked = false;
+                btnDin.Checked = true;
+                lblTable.Visible = true;
+                lblWaiter.Visible = true;
+            }
+
+            DataGridViewPOS.Rows.Clear();
+
+            foreach (DataRow item in dt.Rows)
+            {
+                lblTable.Text = item["TableName"].ToString();
+                lblWaiter.Text = item["WaiterName"].ToString();
+                string detailID = item["DetailID"].ToString();
+                string proName = item["pName"].ToString();
+                string proid = item["proID"].ToString();
+                string qty = item["qty"].ToString();
+                string price = item["price"].ToString();
+                string amount = item["amount"].ToString();
+
+                Object[] obj = {0, detailID, proName, proid, qty, price, amount};
+                DataGridViewPOS.Rows.Add(obj);
+            }
+            GetTotal();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            FrmCheckOut frm = new FrmCheckOut();
+            frm.MainID = id;
+            frm.total = double.Parse(lblTotal.Text);
+            MainClass.BlurBackground(frm);
+            MainID = 0;
+            DataGridViewPOS.Rows.Clear();
+            lblTable.Text = "";
+            lblWaiter.Text = "";
+            lblTable.Visible = false;
+            lblWaiter.Visible = false;
+            lblTotal.Text = "0.00";
         }
     }
 }
