@@ -81,37 +81,46 @@ namespace RM
         
 
         //Add item to datagridview
-        private void AddItems(string id, string proID, string name, string cat, string price, Image image)
+        private void AddItems(string id, string name, string proID, string cat, string price, Image image)
         {
-            var w = new ucProduct()
+            try
             {
-                PName = name,
-                PPrice = price,
-                PCategory = cat,
-                PImage = image,
-                id = Convert.ToInt32(proID)
-            };
-
-            ProductPanel.Controls.Add(w);
-            w.onSelect += (ss, ee) =>
-            {
-                var wdg = (ucProduct)ss;
-                foreach (DataGridViewRow item in DataGridViewPOS.Rows)
+                var w = new ucProduct()
                 {
-                    //this will check it product already there then a one to quantity and update price
-                    if (Convert.ToInt32(item.Cells["dgvproID"].Value) == wdg.id)
+                    PName = name,
+                    PPrice = price,
+                    PCategory = cat,
+                    PImage = image,
+                    id = Convert.ToInt32(proID)
+                };
+
+                ProductPanel.Controls.Add(w);
+                w.onSelect += (ss, ee) =>
+                {
+                    var wdg = (ucProduct)ss;
+                    foreach (DataGridViewRow item in DataGridViewPOS.Rows)
                     {
-                        item.Cells["dgvQty"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) + 1;
-                        item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) *
-                                                        double.Parse(item.Cells["dgvPrice"].Value.ToString());
-                        return;
+                        //this will check it product already there then a one to quantity and update price
+                        if (Convert.ToInt32(item.Cells["dgvproID"].Value) == wdg.id)
+                        {
+                            item.Cells["dgvQty"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) + 1;
+                            item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) *
+                                                            double.Parse(item.Cells["dgvPrice"].Value.ToString());
+                            return;
+                        }
                     }
-                }
-                //this line add new product first for sr# and second 0 from id
-                DataGridViewPOS.Rows.Add(new object[] { 0,0, wdg.id, wdg.PName, 1, wdg.PPrice, wdg.PPrice });
-                GetTotal();
-            };
+                    //this line add new product first for sr# and second 0 from id
+                    DataGridViewPOS.Rows.Add(new object[] { 0, 0, wdg.PName, wdg.id, 1, wdg.PPrice, wdg.PPrice });
+                    GetTotal();
+                };
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error");
+            }
         }
+
         //Load product to panel
         private void LoadProduct()
         {
@@ -126,7 +135,7 @@ namespace RM
                 Byte[] imagearray = (byte[])item["pImage"];
                 byte[] imagebytearray = imagearray;
 
-                AddItems("0",item["pID"].ToString(), item["pName"].ToString(), item["catName"].ToString(),
+                AddItems("0",item["pName"].ToString(), item["pID"].ToString(), item["catName"].ToString(),
                     item["pPrice"].ToString(), Image.FromStream(new MemoryStream(imagearray)));
 
             }
@@ -166,6 +175,9 @@ namespace RM
 
         private void btnNew_Click(object sender, EventArgs e)
         {
+            btnDin.Checked = false;
+            btnDelivery.Checked = false;
+            btnTakeAway.Checked = false;
             lblTable.Text = "";
             lblWaiter.Text = "";
             lblTable.Visible = false;
@@ -257,46 +269,53 @@ namespace RM
             cmd.Parameters.AddWithValue("@received", Convert.ToDouble(0));
             cmd.Parameters.AddWithValue("@change", Convert.ToDouble(0));
 
-            if(MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
-            if(MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
-            if(MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
-
-            foreach (DataGridViewRow row in DataGridViewPOS.Rows)
+            try
             {
-                detailID = Convert.ToInt32(row.Cells["dgvid"].Value);
-
-                if(detailID == 0)
-                {
-                    qry2 = @" Insert into tblDetails Values( @MainID, @proID, @qty, @price, @amount)";
-                }
-                else
-                {
-                    qry2 = @" Update tblDetails Set proID = @proID, qty = @qty, price = @price, amount = @amount 
-                            where DetailID = @ID";
-                }
-
-                SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
-                cmd2.Parameters.AddWithValue("@DetailID", detailID);
-                cmd2.Parameters.AddWithValue("@MainID", MainID);
-                cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
-                cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
-                cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
-                cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
-
                 if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
-                cmd2.ExecuteNonQuery();
+                if (MainID == 0) { MainID = Convert.ToInt32(cmd.ExecuteScalar()); } else { cmd.ExecuteNonQuery(); }
                 if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
-            }
-            POSMessageBox.Show("Saved Successfully");
-            MainID = 0;
-            detailID = 0;
-            DataGridViewPOS.Rows.Clear();
-            lblTable.Text = "";
-            lblWaiter.Text = "";
-            lblTable.Visible = false;
-            lblWaiter.Visible = false;
-            lblTotal.Text = "0.00";
 
+                foreach (DataGridViewRow row in DataGridViewPOS.Rows)
+                {
+                    detailID = Convert.ToInt32(row.Cells["dgvid"].Value);
+
+                    if (detailID == 0)
+                    {
+                        qry2 = @" Insert into tblDetails Values( @MainID, @proID, @qty, @price, @amount)";
+                    }
+                    else
+                    {
+                        qry2 = @" Update tblDetails Set proID = @proID, qty = @qty, price = @price, amount = @amount 
+                            where DetailID = @ID";
+                    }
+
+                    SqlCommand cmd2 = new SqlCommand(qry2, MainClass.con);
+                    cmd2.Parameters.AddWithValue("@DetailID", detailID);
+                    cmd2.Parameters.AddWithValue("@MainID", MainID);
+                    cmd2.Parameters.AddWithValue("@proID", Convert.ToInt32(row.Cells["dgvproID"].Value));
+                    cmd2.Parameters.AddWithValue("@qty", Convert.ToInt32(row.Cells["dgvQty"].Value));
+                    cmd2.Parameters.AddWithValue("@price", Convert.ToDouble(row.Cells["dgvPrice"].Value));
+                    cmd2.Parameters.AddWithValue("@amount", Convert.ToDouble(row.Cells["dgvAmount"].Value));
+
+                    if (MainClass.con.State == ConnectionState.Closed) { MainClass.con.Open(); }
+                    cmd2.ExecuteNonQuery();
+                    if (MainClass.con.State == ConnectionState.Open) { MainClass.con.Close(); }
+                }
+                POSMessageBox.Show("Saved Successfully");
+                MainID = 0;
+                detailID = 0;
+                DataGridViewPOS.Rows.Clear();
+                lblTable.Text = "";
+                lblWaiter.Text = "";
+                lblTable.Visible = false;
+                lblWaiter.Visible = false;
+                lblTotal.Text = "0.00";
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Check the order again!!!");
+            }
+            
         }
 
         public int id = 0;
