@@ -50,20 +50,24 @@
             this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.IconLeft = global::RM.Properties.Resources.Staff_icon;
             this.txtSearch.Location = new System.Drawing.Point(476, 65);
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(57, 57);
+            this.btnAdd.Image = global::RM.Properties.Resources.plus_icon;
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(55, 55);
+            this.btnAdd.UseTransparentBackground = true;
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(104, 32);
+            this.label2.Size = new System.Drawing.Size(82, 25);
             this.label2.Text = "Staff List";
             // 
             // label1
@@ -195,7 +199,7 @@
             this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvDel.FillWeight = 50F;
             this.dgvDel.HeaderText = "";
-            this.dgvDel.Image = global::RM.Properties.Resources.home_512px1;
+            this.dgvDel.Image = global::RM.Properties.Resources.home_512px;
             this.dgvDel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvDel.MinimumWidth = 50;
             this.dgvDel.Name = "dgvDel";
@@ -204,7 +208,7 @@
             // 
             // FrmStaffView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(849, 505);
             this.Controls.Add(this.DataGridViewStaff);

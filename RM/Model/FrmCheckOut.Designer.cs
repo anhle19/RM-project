@@ -56,14 +56,14 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::RM.Properties.Resources.icon_restaurant;
+            this.guna2PictureBox1.Image = global::RM.Properties.Resources.Report_icon;
             this.guna2PictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(122, 32);
+            this.label1.Size = new System.Drawing.Size(96, 25);
             this.label1.Text = "Check out";
             // 
             // btnClose
@@ -112,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(146, 204);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 23);
+            this.label3.Size = new System.Drawing.Size(113, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Payment Received";
             // 
@@ -141,7 +141,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(146, 134);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 23);
+            this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 9;
             this.label2.Text = "Bill Amount";
             // 
@@ -170,7 +170,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(146, 274);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 23);
+            this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 12;
             this.label4.Text = "Change";
             // 
@@ -186,7 +186,7 @@
             // 
             // FrmCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 450);
             this.Controls.Add(this.txtChange);

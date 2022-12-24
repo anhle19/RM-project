@@ -41,11 +41,19 @@
             this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewBills)).BeginInit();
             this.SuspendLayout();
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::RM.Properties.Resources.Report_icon;
+            this.guna2PictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
             // guna2Panel1
             // 
@@ -60,16 +68,9 @@
             this.guna2Panel2.Location = new System.Drawing.Point(0, 643);
             this.guna2Panel2.Size = new System.Drawing.Size(850, 15);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::RM.Properties.Resources.icon_restaurant;
-            this.guna2PictureBox1.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(88, 32);
+            this.label1.Size = new System.Drawing.Size(71, 25);
             this.label1.Text = "Bill List";
             // 
             // btnClose
@@ -234,7 +235,7 @@
             // 
             // FrmBillList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 658);
             this.Controls.Add(this.DataGridViewBills);
@@ -244,10 +245,10 @@
             this.Controls.SetChildIndex(this.guna2Panel1, 0);
             this.Controls.SetChildIndex(this.guna2Panel2, 0);
             this.Controls.SetChildIndex(this.DataGridViewBills, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewBills)).EndInit();
             this.ResumeLayout(false);
 

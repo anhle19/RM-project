@@ -305,8 +305,18 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\product-icon.png" />
+    <None Include="Resources\Kitchen.png" />
     <None Include="Resources\Cancel_512px.png" />
     <None Include="Resources\garbage-icon.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\71.png" />
+    <None Include="Resources\category-icon.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\9.png" />
     <Content Include="Resources\home_512px.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\picBlue.png" />

@@ -30,8 +30,8 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.TablePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.picTableSelect = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TablePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTableSelect)).BeginInit();
             this.SuspendLayout();
@@ -59,18 +59,10 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Table select";
             // 
-            // TablePanel
-            // 
-            this.TablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TablePanel.Location = new System.Drawing.Point(0, 112);
-            this.TablePanel.Name = "TablePanel";
-            this.TablePanel.Size = new System.Drawing.Size(813, 351);
-            this.TablePanel.TabIndex = 2;
-            // 
             // picTableSelect
             // 
             this.picTableSelect.BackColor = System.Drawing.Color.Transparent;
-            this.picTableSelect.Image = global::RM.Properties.Resources.icon_restaurant;
+            this.picTableSelect.Image = global::RM.Properties.Resources.Table_icon;
             this.picTableSelect.ImageRotate = 0F;
             this.picTableSelect.Location = new System.Drawing.Point(21, 12);
             this.picTableSelect.Name = "picTableSelect";
@@ -79,6 +71,14 @@
             this.picTableSelect.TabIndex = 2;
             this.picTableSelect.TabStop = false;
             this.picTableSelect.UseTransparentBackground = true;
+            // 
+            // TablePanel
+            // 
+            this.TablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TablePanel.Location = new System.Drawing.Point(0, 112);
+            this.TablePanel.Name = "TablePanel";
+            this.TablePanel.Size = new System.Drawing.Size(813, 351);
+            this.TablePanel.TabIndex = 2;
             // 
             // FrmTableSelect
             // 
@@ -89,7 +89,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmTableSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTableSelect";

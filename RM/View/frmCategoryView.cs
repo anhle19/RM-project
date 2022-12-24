@@ -22,7 +22,7 @@ namespace RM.View
 
         public void GetData()
         {
-            string qry = "Select * From category where catName like '%"+ txtSearch.Text +"%'";
+            string qry = "Select * From category where catName like '%" + txtSearch.Text + "%'";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);
@@ -50,10 +50,9 @@ namespace RM.View
         private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //Edit selected row
-            if(guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
-                //This is change as we have to set form text propties before open
-                FrmCategoryAdd frm = new FrmCategoryAdd();
+                FrmTableAdd frm = new FrmTableAdd();
                 frm.label1.Text = "Edit Category";
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
@@ -62,11 +61,11 @@ namespace RM.View
             }
             //Delete selected row
             //Need to confirm before delete
-            if(guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvDel")
+            if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvDel")
             {
                 guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
                 guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
-                if(guna2MessageDialog1.Show("Are you sure you want to delete?")==DialogResult.Yes)
+                if (guna2MessageDialog1.Show("Are you sure you want to delete?") == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                     string qry = "Delete from category where catID= " + id + "";
@@ -78,8 +77,9 @@ namespace RM.View
                     MessageBox.Show("Deleted successfully");
                     GetData();
                 }
-                
+
             }
         }
+           
     }
 }

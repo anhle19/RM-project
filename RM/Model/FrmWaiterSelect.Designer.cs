@@ -30,8 +30,8 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.WaiterPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.picWaiterSelect = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.WaiterPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWaiterSelect)).BeginInit();
             this.SuspendLayout();
@@ -59,18 +59,10 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Waiter select";
             // 
-            // WaiterPanel
-            // 
-            this.WaiterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WaiterPanel.Location = new System.Drawing.Point(0, 106);
-            this.WaiterPanel.Name = "WaiterPanel";
-            this.WaiterPanel.Size = new System.Drawing.Size(808, 356);
-            this.WaiterPanel.TabIndex = 2;
-            // 
             // picWaiterSelect
             // 
             this.picWaiterSelect.BackColor = System.Drawing.Color.Transparent;
-            this.picWaiterSelect.Image = global::RM.Properties.Resources.icon_restaurant;
+            this.picWaiterSelect.Image = global::RM.Properties.Resources.Staff_icon;
             this.picWaiterSelect.ImageRotate = 0F;
             this.picWaiterSelect.Location = new System.Drawing.Point(21, 12);
             this.picWaiterSelect.Name = "picWaiterSelect";
@@ -79,6 +71,14 @@
             this.picWaiterSelect.TabIndex = 2;
             this.picWaiterSelect.TabStop = false;
             this.picWaiterSelect.UseTransparentBackground = true;
+            // 
+            // WaiterPanel
+            // 
+            this.WaiterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WaiterPanel.Location = new System.Drawing.Point(0, 106);
+            this.WaiterPanel.Name = "WaiterPanel";
+            this.WaiterPanel.Size = new System.Drawing.Size(808, 356);
+            this.WaiterPanel.TabIndex = 2;
             // 
             // FrmWaiterSelect
             // 
@@ -89,7 +89,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmWaiterSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FrmWaiterSelect_Load);

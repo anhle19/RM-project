@@ -39,20 +39,25 @@ namespace RM.Model
             }
 
             Hashtable ht = new Hashtable();
-            ht.Add("@id", id);
-            ht.Add("@Name", txtName.Text);
-            ht.Add("@phone", txtPhone.Text);
-            ht.Add("@role", cbRole.Text);
-
-            if (MainClass.SQl(qry, ht) > 0)
+            if(txtName.Text != "" && txtPhone.Text != "" && cbRole.Text != "")
             {
-                guna2MessageDialog1.Show("Saved successfully...");
-                id = 0;
-                txtName.Text = "";
-                txtPhone.Text = "";
-                cbRole.SelectedIndex = -1;
-                txtName.Focus();
+                ht.Add("@id", id);
+                ht.Add("@Name", txtName.Text);
+                ht.Add("@phone", txtPhone.Text);
+                ht.Add("@role", cbRole.Text);
+
+                if (MainClass.SQl(qry, ht) > 0)
+                {
+                    guna2MessageDialog1.Show("Saved successfully...");
+                    id = 0;
+                    txtName.Text = "";
+                    txtPhone.Text = "";
+                    cbRole.SelectedIndex = -1;
+                    txtName.Focus();
+                }
             }
+            else
+                guna2MessageDialog1.Show("Check the information");
         }
     }
 }
