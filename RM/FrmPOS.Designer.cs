@@ -328,10 +328,10 @@
             this.btnCheckOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCheckOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCheckOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnCheckOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnCheckOut.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
-            this.btnCheckOut.Location = new System.Drawing.Point(855, 28);
+            this.btnCheckOut.ForeColor = System.Drawing.Color.Black;
+            this.btnCheckOut.Location = new System.Drawing.Point(892, 27);
             this.btnCheckOut.Name = "btnCheckOut";
             this.btnCheckOut.Size = new System.Drawing.Size(120, 45);
             this.btnCheckOut.TabIndex = 4;
@@ -340,12 +340,13 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotal.AutoSize = true;
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.Color.White;
-            this.lblTotal.Location = new System.Drawing.Point(1113, 28);
+            this.lblTotal.Location = new System.Drawing.Point(1128, 27);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(54, 30);
             this.lblTotal.TabIndex = 3;
@@ -353,12 +354,13 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1027, 28);
+            this.label4.Location = new System.Drawing.Point(1042, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 30);
             this.label4.TabIndex = 2;
@@ -380,7 +382,7 @@
             this.ProductPanel.AutoScroll = true;
             this.ProductPanel.Location = new System.Drawing.Point(254, 174);
             this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(670, 498);
+            this.ProductPanel.Size = new System.Drawing.Size(558, 498);
             this.ProductPanel.TabIndex = 3;
             // 
             // DataGridViewPOS
@@ -389,7 +391,9 @@
             this.DataGridViewPOS.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.DataGridViewPOS.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewPOS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataGridViewPOS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -417,12 +421,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridViewPOS.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridViewPOS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridViewPOS.Location = new System.Drawing.Point(939, 174);
+            this.DataGridViewPOS.Location = new System.Drawing.Point(818, 174);
             this.DataGridViewPOS.Name = "DataGridViewPOS";
             this.DataGridViewPOS.ReadOnly = true;
             this.DataGridViewPOS.RowHeadersVisible = false;
             this.DataGridViewPOS.RowHeadersWidth = 51;
-            this.DataGridViewPOS.Size = new System.Drawing.Size(350, 416);
+            this.DataGridViewPOS.Size = new System.Drawing.Size(471, 416);
             this.DataGridViewPOS.TabIndex = 7;
             this.DataGridViewPOS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridViewPOS.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -530,7 +534,7 @@
             this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.IconLeft = global::RM.Properties.Resources.home_512px;
+            this.txtSearch.IconLeft = global::RM.Properties.Resources.Search;
             this.txtSearch.Location = new System.Drawing.Point(254, 123);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';

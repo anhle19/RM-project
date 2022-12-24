@@ -56,3 +56,7 @@ D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmWaiterSelect.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmKitchenView.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmBillList.resources
 D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmCheckOut.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.View.FrmSettingView.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmChangeUserInfor.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmAdvancePass.resources
+D:\Github\Restaurant-Management\RM\obj\Debug\RM.Model.FrmChangeAdvPass.resources

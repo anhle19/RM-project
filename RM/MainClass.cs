@@ -33,6 +33,21 @@ namespace RM
             }
             return isValid;
         }
+
+        //Method check advance password from database
+        public static bool CheckAdvance(string pass)
+        {
+            bool rs = false;
+            string qry = "Select * from advance where pass = '" +pass+ "'";
+            SqlCommand cmd = new SqlCommand(qry, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+                rs = true;
+            return rs;
+        }
+
         //create property for username
         public static string user;
         public static string USER

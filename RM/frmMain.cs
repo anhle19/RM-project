@@ -1,4 +1,5 @@
-﻿using RM.View;
+﻿using RM.Model;
+using RM.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,22 +55,34 @@ namespace RM
 
         private void btnCategories_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmCategoryView());
+            FrmAdvancePass frm = new FrmAdvancePass();
+            MainClass.BlurBackground(frm);
+            if(frm.check)
+                AddControls(new FrmCategoryView());
         }
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmTableView());
+            FrmAdvancePass frm = new FrmAdvancePass();
+            MainClass.BlurBackground(frm);
+            if (frm.check)
+                AddControls(new FrmTableView());
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmStaffView());
+            FrmAdvancePass frm = new FrmAdvancePass();
+            MainClass.BlurBackground(frm);
+            if (frm.check)
+                AddControls(new FrmStaffView());
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            AddControls(new FrmProductView());
+            FrmAdvancePass frm = new FrmAdvancePass();
+            MainClass.BlurBackground(frm);
+            if (frm.check)
+                AddControls(new FrmProductView());
         }
 
         private void btnPOS_Click(object sender, EventArgs e)
@@ -81,6 +94,17 @@ namespace RM
         private void btnKitchen_Click(object sender, EventArgs e)
         {
             AddControls(new FrmKitchenView());
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            FrmAdvancePass frm1 = new FrmAdvancePass();
+            MainClass.BlurBackground(frm1);
+            if (frm1.check)
+            {
+                FrmSettingView frm2 = new FrmSettingView();
+                MainClass.BlurBackground(frm2);
+            }
         }
     }
 }

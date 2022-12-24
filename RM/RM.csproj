@@ -89,6 +89,12 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\FrmAdvancePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmAdvancePass.Designer.cs">
+      <DependentUpon>FrmAdvancePass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\FrmBillList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,18 @@
     </Compile>
     <Compile Include="Model\FrmCategoryAdd.Designer.cs">
       <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FrmChangeAdvPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmChangeAdvPass.Designer.cs">
+      <DependentUpon>FrmChangeAdvPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FrmChangeUserInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\FrmChangeUserInfor.Designer.cs">
+      <DependentUpon>FrmChangeUserInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\FrmCheckOut.cs">
       <SubType>Form</SubType>
@@ -185,6 +203,12 @@
     <Compile Include="View\FrmProductView.Designer.cs">
       <DependentUpon>FrmProductView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmSettingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSettingView.Designer.cs">
+      <DependentUpon>FrmSettingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FrmStaffView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,11 +233,20 @@
     <EmbeddedResource Include="FrmPOS.resx">
       <DependentUpon>FrmPOS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmAdvancePass.resx">
+      <DependentUpon>FrmAdvancePass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmBillList.resx">
       <DependentUpon>FrmBillList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmCategoryAdd.resx">
       <DependentUpon>FrmCategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmChangeAdvPass.resx">
+      <DependentUpon>FrmChangeAdvPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\FrmChangeUserInfor.resx">
+      <DependentUpon>FrmChangeUserInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\FrmCheckOut.resx">
       <DependentUpon>FrmCheckOut.cs</DependentUpon>
@@ -255,6 +288,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmProductView.resx">
       <DependentUpon>FrmProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSettingView.resx">
+      <DependentUpon>FrmSettingView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FrmStaffView.resx">
       <DependentUpon>FrmStaffView.cs</DependentUpon>
@@ -305,6 +341,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\res-logo.png" />
+    <None Include="Resources\Menu1.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Search.png" />
     <None Include="Resources\product-icon.png" />
     <None Include="Resources\Kitchen.png" />
     <None Include="Resources\Cancel_512px.png" />
@@ -317,6 +357,8 @@
     <None Include="Resources\3.png" />
     <None Include="Resources\2.png" />
     <None Include="Resources\9.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Delete.png" />
     <Content Include="Resources\home_512px.png" />
     <None Include="Resources\plus-icon.png" />
     <None Include="Resources\picBlue.png" />

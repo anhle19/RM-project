@@ -108,7 +108,8 @@
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.FillColor = System.Drawing.Color.Red;
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(1030, 12);
             this.btnExit.Name = "btnExit";
@@ -120,7 +121,7 @@
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.btnMaximize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnMaximize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnMaximize.IconColor = System.Drawing.Color.White;
             this.btnMaximize.Location = new System.Drawing.Point(979, 12);
             this.btnMaximize.Name = "btnMaximize";
@@ -131,7 +132,7 @@
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.btnMinimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnMinimize.FillColor = System.Drawing.Color.Lime;
             this.btnMinimize.IconColor = System.Drawing.Color.White;
             this.btnMinimize.Location = new System.Drawing.Point(928, 12);
             this.btnMinimize.Name = "btnMinimize";
@@ -169,6 +170,7 @@
             this.btnSetting.Text = "Settings";
             this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
             // btnKitchen
             // 
@@ -351,7 +353,7 @@
             // picMain
             // 
             this.picMain.BackColor = System.Drawing.Color.Transparent;
-            this.picMain.Image = global::RM.Properties.Resources.icon_restaurant;
+            this.picMain.Image = global::RM.Properties.Resources.res_logo;
             this.picMain.ImageRotate = 0F;
             this.picMain.InitialImage = null;
             this.picMain.Location = new System.Drawing.Point(52, 13);

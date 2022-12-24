@@ -99,7 +99,7 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(226, 25);
             this.txtUser.TabIndex = 0;
-            this.txtUser.Text = "admin";
+            this.txtUser.Text = "admin123";
             // 
             // txtPassword
             // 
@@ -107,7 +107,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(226, 25);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.Text = "123";
+            this.txtPassword.Text = "321";
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
@@ -188,11 +188,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
+        public Guna.UI2.WinForms.Guna2Button btnLogin;
+        public System.Windows.Forms.TextBox txtUser;
+        public System.Windows.Forms.TextBox txtPassword;
     }
 }
 
