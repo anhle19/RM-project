@@ -45,8 +45,6 @@ namespace RM.Model
                 else
                     guna2MessageDialog1.Show("Check the information");
             }
-            else
-                guna2MessageDialog1.Show("Check the information");
         }
     }
 }
