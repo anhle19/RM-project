@@ -45,6 +45,8 @@ namespace RM
         {
             lbUser.Text = MainClass.USER;
             _obj = this;
+            AddControls(new FrmHome());
+            btnHome.Checked = true;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
