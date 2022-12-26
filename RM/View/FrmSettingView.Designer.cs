@@ -59,7 +59,7 @@
             this.btnAdvance.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdvance.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdvance.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdvance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnAdvance.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdvance.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAdvance.ForeColor = System.Drawing.Color.White;
             this.btnAdvance.Location = new System.Drawing.Point(53, 201);

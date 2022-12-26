@@ -22,14 +22,12 @@ namespace RM.View
         {
             FrmChangeUserInfor frm = new FrmChangeUserInfor();
             MainClass.BlurBackground(frm);
-            this.Close();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             FrmChangeAdvPass frm = new FrmChangeAdvPass();
             MainClass.BlurBackground(frm);
-            this.Close();
         }
     }
 }
