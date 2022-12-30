@@ -33,7 +33,7 @@ namespace RM.Model
 
                 change = received - amt;
                 txtChange.Text = change.ToString();
-                if (change > 0) check = true;
+                if (change >= 0) check = true;
             }
             else
                 guna2MessageDialog1.Show("Check received");
