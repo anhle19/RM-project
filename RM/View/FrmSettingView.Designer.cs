@@ -48,7 +48,7 @@
             this.btnChangeInfor.Name = "btnChangeInfor";
             this.btnChangeInfor.Size = new System.Drawing.Size(180, 45);
             this.btnChangeInfor.TabIndex = 0;
-            this.btnChangeInfor.Text = "Change login infor";
+            this.btnChangeInfor.Text = "Change login information";
             this.btnChangeInfor.Click += new System.EventHandler(this.btnChangeInfor_Click);
             // 
             // btnAdvance
@@ -73,9 +73,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 56);
+            this.label1.Location = new System.Drawing.Point(92, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 30);
+            this.label1.Size = new System.Drawing.Size(101, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Setting";
             // 
@@ -91,7 +91,7 @@
             // 
             // FrmSettingView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 307);
             this.Controls.Add(this.guna2ControlBox1);

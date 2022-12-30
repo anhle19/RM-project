@@ -18,6 +18,7 @@ namespace RM.Model
         {
             InitializeComponent();
         }
+
         public double total=0;
         public bool check = false;
         public int MainID = 0;
@@ -33,7 +34,7 @@ namespace RM.Model
 
                 change = received - amt;
                 txtChange.Text = change.ToString();
-                if (change > 0) check = true;
+                if (change >= 0) check = true;
             }
             else
                 guna2MessageDialog1.Show("Check received");

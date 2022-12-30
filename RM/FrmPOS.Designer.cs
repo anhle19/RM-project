@@ -111,7 +111,7 @@
             this.lblWaiter.ForeColor = System.Drawing.Color.White;
             this.lblWaiter.Location = new System.Drawing.Point(948, 60);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(76, 30);
+            this.lblWaiter.Size = new System.Drawing.Size(94, 37);
             this.lblWaiter.TabIndex = 10;
             this.lblWaiter.Text = "Waiter";
             // 
@@ -123,7 +123,7 @@
             this.lblTable.ForeColor = System.Drawing.Color.White;
             this.lblTable.Location = new System.Drawing.Point(948, 21);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(64, 30);
+            this.lblTable.Size = new System.Drawing.Size(79, 37);
             this.lblTable.TabIndex = 9;
             this.lblTable.Text = "Table";
             // 
@@ -179,7 +179,7 @@
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(120, 34);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(54, 30);
+            this.lblHeader.Size = new System.Drawing.Size(66, 37);
             this.lblHeader.TabIndex = 1;
             this.lblHeader.Text = "POS";
             // 
@@ -348,7 +348,7 @@
             this.lblTotal.ForeColor = System.Drawing.Color.White;
             this.lblTotal.Location = new System.Drawing.Point(1128, 27);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(54, 30);
+            this.lblTotal.Size = new System.Drawing.Size(68, 37);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "0.00";
             // 
@@ -362,7 +362,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(1042, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 30);
+            this.label4.Size = new System.Drawing.Size(80, 37);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total:";
             // 
