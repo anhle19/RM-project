@@ -77,6 +77,7 @@ namespace RM
                 var product = (ucProduct)item;
                 product.Visible = product.PCategory.ToLower().Contains(b.Text.Trim().ToLower());
             }
+            GetTotal();
         }
         
 
