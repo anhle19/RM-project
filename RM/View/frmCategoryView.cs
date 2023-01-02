@@ -52,7 +52,7 @@ namespace RM.View
             //Edit selected row
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
-                FrmTableAdd frm = new FrmTableAdd();
+                FrmCategoryAdd frm = new FrmCategoryAdd();
                 frm.label1.Text = "Edit Category";
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);

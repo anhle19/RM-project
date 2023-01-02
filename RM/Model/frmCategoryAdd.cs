@@ -28,7 +28,7 @@ namespace RM.Model
             }
             else
             {
-                qry = "Update category Set catname = @Name where catiD = @id";
+                qry = "Update category Set catName = @Name where catID = @id";
             }
 
             Hashtable ht = new Hashtable();
