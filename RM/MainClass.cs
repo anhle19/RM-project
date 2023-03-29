@@ -14,7 +14,7 @@ namespace RM
 {
     internal class MainClass
     {
-        public static readonly string con_string = "Data Source=LAPTOP-7F516QL8\\SQLEXPRESS;Initial Catalog=RM;Integrated Security=True";
+        public static readonly string con_string = "Data Source=LEANH-PC\\SQLEXPRESS;Initial Catalog=RM;Integrated Security=True";
         public static SqlConnection con = new SqlConnection(con_string);
 
         //Method check user validation from database to login into application

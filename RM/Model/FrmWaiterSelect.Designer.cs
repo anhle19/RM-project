@@ -44,7 +44,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(808, 106);
+            this.guna2Panel1.Size = new System.Drawing.Size(738, 106);
             this.guna2Panel1.TabIndex = 1;
             // 
             // label1
@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(130, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
+            this.label1.Size = new System.Drawing.Size(150, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Waiter select";
             // 
@@ -77,14 +77,14 @@
             this.WaiterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WaiterPanel.Location = new System.Drawing.Point(0, 106);
             this.WaiterPanel.Name = "WaiterPanel";
-            this.WaiterPanel.Size = new System.Drawing.Size(808, 356);
+            this.WaiterPanel.Size = new System.Drawing.Size(738, 336);
             this.WaiterPanel.TabIndex = 2;
             // 
             // FrmWaiterSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 462);
+            this.ClientSize = new System.Drawing.Size(738, 442);
             this.Controls.Add(this.WaiterPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,14 +66,51 @@ namespace RM.Model
                 guna2MessageDialog1.Show("Check received");
         }
 
+        private void LoadData()
+        {
+            string qry = @"Select * from tblMain m
+                                inner join tblDetails d on m.MainID = d.MainID
+                                inner join products p on p.pID = d.proID
+                                where d.MainID = " + MainID + "";
+
+            SqlCommand cmd = new SqlCommand(qry, MainClass.con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+
+            DataGridViewCheckOut.Rows.Clear();
+            foreach (DataRow item in dt.Rows)
+            {
+                string detailID = item["DetailID"].ToString();
+                string proName = item["pName"].ToString();
+                string proid = item["proID"].ToString();
+                string qty = item["qty"].ToString();
+                string price = item["price"].ToString();
+                string amount = item["amount"].ToString();
+
+                Object[] obj = { 0, detailID, proName, proid, qty, price, amount };
+                DataGridViewCheckOut.Rows.Add(obj);
+            }
+        }
         private void FrmCheckOut_Load(object sender, EventArgs e)
         {
+            LoadData();
             txtAmount.Text = total.ToString();
         }
 
         private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DataGridViewCheckOut_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            int count = 0;
+            foreach (DataGridViewRow row in DataGridViewCheckOut.Rows)
+            {
+                count++;
+                row.Cells[0].Value = count;
+            }
         }
     }
 }

@@ -389,12 +389,35 @@ namespace RM
             GetTotal();
         }
 
+        private void CopyData(DataGridView dataGridView1, DataGridView dataGridView2)
+        {
+            // Create a new DataTable and copy all data from DataGridView1 to it
+            DataTable table = new DataTable();
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                table.Columns.Add(col.Name, col.ValueType);
+            }
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                DataRow dataRow = table.NewRow();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    dataRow[cell.ColumnIndex] = cell.Value;
+                }
+                table.Rows.Add(dataRow);
+            }
+
+            // Set the DataTable as DataSource of DataGridView2
+            dataGridView2.DataSource = table;
+
+        }
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             FrmCheckOut frm = new FrmCheckOut();
             frm.MainID = id;
             frm.total = double.Parse(lblTotal.Text);
             MainClass.BlurBackground(frm);
+            //CopyData(DataGridViewPOS, frm.DataGridViewPOS);
             MainID = 0;
             DataGridViewPOS.Rows.Clear();
             lblTable.Text = "";

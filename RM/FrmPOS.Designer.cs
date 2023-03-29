@@ -40,7 +40,6 @@
             this.lblHeader = new System.Windows.Forms.Label();
             this.btnTakeAway = new Guna.UI2.WinForms.Guna2TileButton();
             this.picturePOS = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnHold = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnDelivery = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnKOT = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnBillList = new Guna.UI2.WinForms.Guna2TileButton();
@@ -77,7 +76,6 @@
             this.guna2Panel1.Controls.Add(this.lblHeader);
             this.guna2Panel1.Controls.Add(this.btnTakeAway);
             this.guna2Panel1.Controls.Add(this.picturePOS);
-            this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnDelivery);
             this.guna2Panel1.Controls.Add(this.btnKOT);
             this.guna2Panel1.Controls.Add(this.btnBillList);
@@ -109,9 +107,9 @@
             this.lblWaiter.BackColor = System.Drawing.Color.Transparent;
             this.lblWaiter.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWaiter.ForeColor = System.Drawing.Color.White;
-            this.lblWaiter.Location = new System.Drawing.Point(948, 60);
+            this.lblWaiter.Location = new System.Drawing.Point(828, 60);
             this.lblWaiter.Name = "lblWaiter";
-            this.lblWaiter.Size = new System.Drawing.Size(94, 37);
+            this.lblWaiter.Size = new System.Drawing.Size(76, 30);
             this.lblWaiter.TabIndex = 10;
             this.lblWaiter.Text = "Waiter";
             // 
@@ -121,9 +119,9 @@
             this.lblTable.BackColor = System.Drawing.Color.Transparent;
             this.lblTable.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTable.ForeColor = System.Drawing.Color.White;
-            this.lblTable.Location = new System.Drawing.Point(948, 21);
+            this.lblTable.Location = new System.Drawing.Point(828, 21);
             this.lblTable.Name = "lblTable";
-            this.lblTable.Size = new System.Drawing.Size(79, 37);
+            this.lblTable.Size = new System.Drawing.Size(64, 30);
             this.lblTable.TabIndex = 9;
             this.lblTable.Text = "Table";
             // 
@@ -142,7 +140,7 @@
             this.btnDin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnDin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDin.ForeColor = System.Drawing.Color.White;
-            this.btnDin.Location = new System.Drawing.Point(836, 12);
+            this.btnDin.Location = new System.Drawing.Point(724, 12);
             this.btnDin.Name = "btnDin";
             this.btnDin.Size = new System.Drawing.Size(88, 78);
             this.btnDin.TabIndex = 8;
@@ -164,7 +162,7 @@
             this.btnNew.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnNew.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(260, 12);
+            this.btnNew.Location = new System.Drawing.Point(244, 12);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(90, 78);
             this.btnNew.TabIndex = 2;
@@ -179,7 +177,7 @@
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(120, 34);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(66, 37);
+            this.lblHeader.Size = new System.Drawing.Size(54, 30);
             this.lblHeader.TabIndex = 1;
             this.lblHeader.Text = "POS";
             // 
@@ -198,7 +196,7 @@
             this.btnTakeAway.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnTakeAway.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnTakeAway.ForeColor = System.Drawing.Color.White;
-            this.btnTakeAway.Location = new System.Drawing.Point(740, 12);
+            this.btnTakeAway.Location = new System.Drawing.Point(628, 12);
             this.btnTakeAway.Name = "btnTakeAway";
             this.btnTakeAway.Size = new System.Drawing.Size(90, 78);
             this.btnTakeAway.TabIndex = 7;
@@ -218,27 +216,6 @@
             this.picturePOS.TabStop = false;
             this.picturePOS.UseTransparentBackground = true;
             // 
-            // btnHold
-            // 
-            this.btnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.btnHold.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnHold.BorderRadius = 10;
-            this.btnHold.BorderThickness = 2;
-            this.btnHold.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.btnHold.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnHold.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHold.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHold.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHold.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHold.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnHold.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnHold.ForeColor = System.Drawing.Color.White;
-            this.btnHold.Location = new System.Drawing.Point(356, 12);
-            this.btnHold.Name = "btnHold";
-            this.btnHold.Size = new System.Drawing.Size(90, 78);
-            this.btnHold.TabIndex = 3;
-            this.btnHold.Text = "Hold";
-            // 
             // btnDelivery
             // 
             this.btnDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
@@ -254,7 +231,7 @@
             this.btnDelivery.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnDelivery.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelivery.ForeColor = System.Drawing.Color.White;
-            this.btnDelivery.Location = new System.Drawing.Point(644, 12);
+            this.btnDelivery.Location = new System.Drawing.Point(532, 12);
             this.btnDelivery.Name = "btnDelivery";
             this.btnDelivery.Size = new System.Drawing.Size(90, 78);
             this.btnDelivery.TabIndex = 6;
@@ -276,7 +253,7 @@
             this.btnKOT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnKOT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnKOT.ForeColor = System.Drawing.Color.White;
-            this.btnKOT.Location = new System.Drawing.Point(548, 12);
+            this.btnKOT.Location = new System.Drawing.Point(436, 12);
             this.btnKOT.Name = "btnKOT";
             this.btnKOT.Size = new System.Drawing.Size(90, 78);
             this.btnKOT.TabIndex = 5;
@@ -298,7 +275,7 @@
             this.btnBillList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnBillList.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBillList.ForeColor = System.Drawing.Color.White;
-            this.btnBillList.Location = new System.Drawing.Point(452, 12);
+            this.btnBillList.Location = new System.Drawing.Point(340, 12);
             this.btnBillList.Name = "btnBillList";
             this.btnBillList.Size = new System.Drawing.Size(90, 78);
             this.btnBillList.TabIndex = 4;
@@ -348,7 +325,7 @@
             this.lblTotal.ForeColor = System.Drawing.Color.White;
             this.lblTotal.Location = new System.Drawing.Point(1128, 27);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(68, 37);
+            this.lblTotal.Size = new System.Drawing.Size(54, 30);
             this.lblTotal.TabIndex = 3;
             this.lblTotal.Text = "0.00";
             // 
@@ -362,7 +339,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(1042, 27);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 37);
+            this.label4.Size = new System.Drawing.Size(64, 30);
             this.label4.TabIndex = 2;
             this.label4.Text = "Total:";
             // 
@@ -582,7 +559,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox picturePOS;
         private Guna.UI2.WinForms.Guna2TileButton btnDin;
         private Guna.UI2.WinForms.Guna2TileButton btnTakeAway;
-        private Guna.UI2.WinForms.Guna2TileButton btnHold;
         private Guna.UI2.WinForms.Guna2TileButton btnDelivery;
         private Guna.UI2.WinForms.Guna2TileButton btnKOT;
         private Guna.UI2.WinForms.Guna2TileButton btnBillList;
