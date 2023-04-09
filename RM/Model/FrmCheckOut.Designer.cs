@@ -41,14 +41,13 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.DataGridViewCheckOut = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rMDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rMDataSet = new RM.RMDataSet();
+            this.btnPrint = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -67,8 +66,12 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.btnPrint);
             this.guna2Panel2.Location = new System.Drawing.Point(0, 545);
             this.guna2Panel2.Size = new System.Drawing.Size(906, 76);
+            this.guna2Panel2.Controls.SetChildIndex(this.btnPrint, 0);
+            this.guna2Panel2.Controls.SetChildIndex(this.btnSave, 0);
+            this.guna2Panel2.Controls.SetChildIndex(this.btnClose, 0);
             // 
             // guna2PictureBox1
             // 
@@ -80,7 +83,7 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(122, 32);
             this.label1.Text = "Check out";
             // 
             // btnClose
@@ -91,7 +94,7 @@
             this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClose.Location = new System.Drawing.Point(505, 19);
+            this.btnClose.Location = new System.Drawing.Point(575, 19);
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // btnSave
@@ -102,7 +105,7 @@
             this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.Location = new System.Drawing.Point(315, 19);
+            this.btnSave.Location = new System.Drawing.Point(385, 19);
             // 
             // txtReceived
             // 
@@ -129,7 +132,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(59, 273);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 17);
+            this.label3.Size = new System.Drawing.Size(148, 23);
             this.label3.TabIndex = 10;
             this.label3.Text = "Payment Received";
             // 
@@ -158,7 +161,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(59, 203);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(99, 23);
             this.label2.TabIndex = 9;
             this.label2.Text = "Bill Amount";
             // 
@@ -187,7 +190,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(59, 343);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 17);
+            this.label4.Size = new System.Drawing.Size(69, 23);
             this.label4.TabIndex = 12;
             this.label4.Text = "Change";
             // 
@@ -222,9 +225,7 @@
             this.DataGridViewCheckOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewCheckOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSno,
-            this.dgvid,
             this.dgvName,
-            this.dgvProID,
             this.dgvQty,
             this.dgvPrice,
             this.dgvAmount});
@@ -272,63 +273,47 @@
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvSno.FillWeight = 70F;
             this.dgvSno.HeaderText = "Sr#";
-            this.dgvSno.MinimumWidth = 70;
+            this.dgvSno.MinimumWidth = 50;
             this.dgvSno.Name = "dgvSno";
             this.dgvSno.ReadOnly = true;
-            this.dgvSno.Width = 70;
-            // 
-            // dgvid
-            // 
-            this.dgvid.HeaderText = "id";
-            this.dgvid.MinimumWidth = 6;
-            this.dgvid.Name = "dgvid";
-            this.dgvid.ReadOnly = true;
-            this.dgvid.Visible = false;
+            this.dgvSno.Width = 50;
             // 
             // dgvName
             // 
             this.dgvName.HeaderText = "Name";
-            this.dgvName.MinimumWidth = 6;
+            this.dgvName.MinimumWidth = 200;
             this.dgvName.Name = "dgvName";
             this.dgvName.ReadOnly = true;
-            // 
-            // dgvProID
-            // 
-            this.dgvProID.HeaderText = "ProductID";
-            this.dgvProID.MinimumWidth = 6;
-            this.dgvProID.Name = "dgvProID";
-            this.dgvProID.ReadOnly = true;
-            this.dgvProID.Visible = false;
             // 
             // dgvQty
             // 
             this.dgvQty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvQty.FillWeight = 30F;
             this.dgvQty.HeaderText = "Qty";
-            this.dgvQty.MinimumWidth = 30;
+            this.dgvQty.MinimumWidth = 50;
             this.dgvQty.Name = "dgvQty";
             this.dgvQty.ReadOnly = true;
-            this.dgvQty.Width = 30;
+            this.dgvQty.Width = 50;
             // 
             // dgvPrice
             // 
             this.dgvPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvPrice.FillWeight = 30F;
             this.dgvPrice.HeaderText = "Price";
-            this.dgvPrice.MinimumWidth = 50;
+            this.dgvPrice.MinimumWidth = 70;
             this.dgvPrice.Name = "dgvPrice";
             this.dgvPrice.ReadOnly = true;
-            this.dgvPrice.Width = 50;
+            this.dgvPrice.Width = 70;
             // 
             // dgvAmount
             // 
             this.dgvAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvAmount.FillWeight = 50F;
             this.dgvAmount.HeaderText = "Amount";
-            this.dgvAmount.MinimumWidth = 50;
+            this.dgvAmount.MinimumWidth = 70;
             this.dgvAmount.Name = "dgvAmount";
             this.dgvAmount.ReadOnly = true;
-            this.dgvAmount.Width = 50;
+            this.dgvAmount.Width = 70;
             // 
             // rMDataSetBindingSource
             // 
@@ -340,9 +325,27 @@
             this.rMDataSet.DataSetName = "RMDataSet";
             this.rMDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // btnPrint
+            // 
+            this.btnPrint.AutoRoundedCorners = true;
+            this.btnPrint.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrint.BorderRadius = 21;
+            this.btnPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(201, 19);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(118, 45);
+            this.btnPrint.TabIndex = 2;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // FrmCheckOut
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 621);
             this.Controls.Add(this.DataGridViewCheckOut);
@@ -386,14 +389,13 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         public Guna.UI2.WinForms.Guna2DataGridView DataGridViewCheckOut;
+        private System.Windows.Forms.BindingSource rMDataSetBindingSource;
+        private RMDataSet rMDataSet;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvProID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
-        private System.Windows.Forms.BindingSource rMDataSetBindingSource;
-        private RMDataSet rMDataSet;
+        private Guna.UI2.WinForms.Guna2Button btnPrint;
     }
 }
